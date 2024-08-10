@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mergeClass(inter.className, "dark:text-white")}>
+      <body
+        className={mergeClass(inter.className, "dark:text-white min-h-screen")}
+      >
         <Navbar />
         {children}
       </body>

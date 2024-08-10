@@ -27,7 +27,7 @@ export default async function SearchResults({ params: { searchTerm } }: Props) {
 
   const results: Result[] | undefined = data?.query?.pages;
   const content = (
-    <main className="bg-white dark:bg-black  mx-auto p-8  min-h-screen overflow-hidden flex flex-col">
+    <main className="bg-white dark:bg-black  mx-auto w-full p-8  min-h-screen overflow-hidden flex flex-col">
       {results ? (
         Object.values(results).map((result) => {
           return <Item key={result.pageid} result={result} />;

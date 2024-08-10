@@ -21,7 +21,7 @@ export default function Item({ result }: Props) {
     </div>
   );
   const content = result?.thumbnail?.source ? (
-    <article className="m-4 max-w-lg">
+    <article className="m-4 w-full">
       <div className="flex flex-row gap-4">
         <div className="flex flex-col justify-center">
           <Image
@@ -36,7 +36,7 @@ export default function Item({ result }: Props) {
       </div>
     </article>
   ) : (
-    <article className="m-4 max-w-lg">{itemCol}</article>
+    <article className="m-4 w-full">{itemCol}</article>
   );
 
   return content;
